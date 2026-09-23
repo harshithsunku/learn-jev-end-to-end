@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v5
       - run: uv sync --extra docs
-      - name: Build the site (strict: broken links fail the build)
+      - name: "Build the site (strict mode: broken links fail the build)"
         run: uv run mkdocs build --strict
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
