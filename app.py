@@ -12,6 +12,7 @@ import json
 import os
 import re
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urlparse
 
 import gradio as gr
@@ -263,13 +264,28 @@ def guarded_agent(request):
 
 # ---------------------------------------------------------------- 6. the race (notebook 02)
 def race(text, question):
-    r, jev_ms = ask_jev(text, {"q": Noul(instructions=question)})
-    t0 = time.perf_counter()
-    llm = chat(f"{question} Answer yes or no.\n\n{text}")
-    llm_ms = 1000 * (time.perf_counter() - t0)
+    """Start both brains at the same moment and show each answer as soon as it lands."""
+    def timed(fn):
+        t0 = time.perf_counter()
+        out = fn()
+        return out, 1000 * (time.perf_counter() - t0)
+
+    pool = ThreadPoolExecutor(2)
+    jev_f = pool.submit(timed, lambda: jev.system_one(text, {"q": Noul(instructions=question)}))
+    llm_f = pool.submit(timed, lambda: chat(f"{question} Answer yes or no.\n\n{text}"))
+    ja = jm = la = lm = "..."
+    for fut in as_completed([jev_f, llm_f]):
+        if fut is jev_f:
+            r, jev_ms = fut.result()
+            ja, jm = f"P(yes) = {r.nouls['q'].noul:.2f}", f"{jev_ms:.0f} ms"
+        else:
+            llm, llm_ms = fut.result()
+            la, lm = llm.strip(), f"{llm_ms:.0f} ms"
+        yield ja, jm, la, lm, "racing..."
+    pool.shutdown()
     verdict = (f"Jev was {llm_ms / jev_ms:.1f}x faster" if JEV_BACKEND != "adapter"
                else "JEV_BACKEND=adapter: the 'Jev' side is your LLM via the adapter - set typesafe for the real race")
-    return (f"P(yes) = {r.nouls['q'].noul:.2f}", f"{jev_ms:.0f} ms", llm.strip(), f"{llm_ms:.0f} ms", verdict)
+    yield ja, jm, la, lm, verdict
 
 
 # ---------------------------------------------------------------- UI

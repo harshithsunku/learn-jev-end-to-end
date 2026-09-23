@@ -42,3 +42,8 @@
     [build-your-first-ai-agent](https://github.com/harshithsunku/build-your-first-ai-agent) teaches the
     agent loop itself. This course reuses that loop and adds a second kind of model to make the agent's
     decisions faster, cheaper and safer.
+
+??? question "Was this built with AI?"
+    Yes, with AI assistance. Much of the code and text was written with Claude Code (Anthropic's coding
+    agent) and reviewed by the maintainer. Every notebook was executed for real, and every number on this
+    site comes from those committed outputs, including the results where Jev loses.

@@ -25,6 +25,9 @@ and use it to build <b>13 real AI tools</b>, from an email triage job to an agen
 <div class="stat"><b>&lt; $0.20</b>for the whole course</div>
 </div>
 
+![Demo: Jev answers in about 0.5 s while the LLM is still thinking; a scam text is blocked; the agent guard holds rm -rf for a human](assets/demo.gif){ .diagram }
+<p style="text-align:center"><small>The Jev Playground (<code>app.py</code>), recorded live in real time.</small></p>
+
 ## Jev in 30 seconds
 
 Most AI apps use one kind of model: an **LLM**, which writes text. But most of the work inside an AI app

@@ -29,6 +29,11 @@ building **13 real AI tools** with it: an email triage job, a scam-text detector
 hunter, an agent safety guard and more. You need **one API key**, and running the whole course costs **less
 than $0.20**.
 
+<p align="center">
+  <img src="docs/assets/demo.gif" alt="Demo: Jev answers in about 0.5 s while the LLM is still thinking; a toll-scam text is blocked; the agent guard allows du but holds rm -rf for a human" width="92%">
+  <br><sub>The <a href="app.py">Jev Playground</a>, recorded live (real time): Jev vs an LLM race · scam-text shield · agent guard.</sub>
+</p>
+
 ## ⚡ Jev in 30 seconds
 
 Most AI apps use one kind of model: an **LLM**, which *writes*. But most of the work inside an AI app isn't
@@ -217,4 +222,6 @@ which builds the agent loop that every notebook here reuses.
 ---
 
 <sub>MIT licensed. An independent community course, not affiliated with TypeSafe AI, OpenRouter or OpenAI.
-All numbers come from our run on 2026-09-23 and yours will vary. Run notebook 02 to see your own.</sub>
+Built with AI assistance: much of the code and text was written with Claude Code (Anthropic's coding agent)
+and reviewed by the maintainer. Every number comes from a real, committed run (2026-09-23), and yours will
+vary. Run notebook 02 to see your own.</sub>
