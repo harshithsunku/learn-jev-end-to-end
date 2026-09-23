@@ -1,0 +1,13 @@
+# Classic pip install (uv users: `uv sync` reads pyproject.toml instead).
+#   python -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
+openai>=1.60
+typesafe-sdk>=0.7.1
+system-one-adapter[openai]
+python-dotenv>=1.0
+httpx>=0.27
+matplotlib>=3.8
+jupyterlab>=4.2
+nbconvert>=7.16
+ipykernel>=6.29
+# UI (app.py only)
+gradio>=5.0

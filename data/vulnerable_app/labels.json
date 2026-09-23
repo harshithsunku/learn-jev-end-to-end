@@ -1,0 +1,22 @@
+{
+  "app/db.py::get_conn": "none",
+  "app/db.py::get_user": "CWE-89",
+  "app/db.py::get_user_safe": "none",
+  "app/db.py::search_products": "CWE-89",
+  "app/db.py::count_orders": "none",
+  "app/files.py::<module>": "none",
+  "app/files.py::download": "CWE-22",
+  "app/files.py::download_safe": "none",
+  "app/files.py::list_uploads": "none",
+  "app/admin.py::ping_host": "CWE-78",
+  "app/admin.py::run_backup": "none",
+  "app/admin.py::disk_report": "CWE-78",
+  "app/settings.py::<module>": "CWE-798",
+  "app/settings.py::load_settings": "none",
+  "app/sessions.py::load_session": "CWE-502",
+  "app/sessions.py::hash_password": "CWE-327",
+  "app/sessions.py::hash_password_safe": "none",
+  "app/views.py::render_greeting": "CWE-79",
+  "app/views.py::render_greeting_safe": "none",
+  "app/views.py::health": "none"
+}

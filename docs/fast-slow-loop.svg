@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" width="960" height="440" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+    <marker id="t" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/>
+    </marker>
+  </defs>
+  <rect width="960" height="440" rx="14" fill="#ffffff"/>
+  <text x="480" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">The agent loop, with a fast brain at every decision point</text>
+  <text x="480" y="56" text-anchor="middle" font-size="13" fill="#475569">grey = the classic loop (slow brain: LLM)   ·   teal = Jev decision points (fast brain: ~300 ms, fractions of a cent)</text>
+
+  <!-- user query -->
+  <rect x="24" y="190" width="120" height="48" rx="10" fill="#f1f5f9" stroke="#94a3b8"/>
+  <text x="84" y="219" text-anchor="middle" font-size="14" fill="#0f172a">user query</text>
+
+  <!-- A router -->
+  <rect x="176" y="178" width="132" height="72" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="242" y="204" text-anchor="middle" font-size="14" font-weight="700" fill="#0f766e">(A) ROUTER</text>
+  <text x="242" y="224" text-anchor="middle" font-size="12" fill="#134e4a">Choice: which model?</text>
+  <text x="242" y="240" text-anchor="middle" font-size="12" fill="#134e4a">which tools?</text>
+
+  <!-- LLM -->
+  <rect x="344" y="178" width="140" height="72" rx="12" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+  <text x="414" y="208" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">LLM</text>
+  <text x="414" y="228" text-anchor="middle" font-size="12" fill="#334155">slow brain</text>
+
+  <!-- decision diamond -->
+  <polygon points="590,168 660,214 590,260 520,214" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+  <text x="590" y="211" text-anchor="middle" font-size="12" fill="#0f172a">tool</text>
+  <text x="590" y="226" text-anchor="middle" font-size="12" fill="#0f172a">call?</text>
+
+  <!-- C guard -->
+  <rect x="700" y="92" width="150" height="66" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="775" y="117" text-anchor="middle" font-size="14" font-weight="700" fill="#0f766e">(C) GUARD</text>
+  <text x="775" y="137" text-anchor="middle" font-size="12" fill="#134e4a">allow / ask / block</text>
+
+  <!-- run tool -->
+  <rect x="870" y="178" width="72" height="72" rx="12" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+  <text x="906" y="210" text-anchor="middle" font-size="13" fill="#0f172a">run</text>
+  <text x="906" y="226" text-anchor="middle" font-size="13" fill="#0f172a">tool</text>
+
+  <!-- B jev as tool -->
+  <rect x="742" y="300" width="200" height="50" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="842" y="321" text-anchor="middle" font-size="14" font-weight="700" fill="#0f766e">(B) Jev AS A TOOL</text>
+  <text x="842" y="339" text-anchor="middle" font-size="12" fill="#134e4a">classify / score / screen</text>
+
+  <!-- D done gate -->
+  <rect x="490" y="300" width="200" height="50" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="590" y="321" text-anchor="middle" font-size="14" font-weight="700" fill="#0f766e">(D) DONE?</text>
+  <text x="590" y="339" text-anchor="middle" font-size="12" fill="#134e4a">Noul: every part answered?</text>
+
+  <!-- E judge -->
+  <rect x="300" y="372" width="200" height="50" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="400" y="393" text-anchor="middle" font-size="14" font-weight="700" fill="#0f766e">(E) JUDGE</text>
+  <text x="400" y="411" text-anchor="middle" font-size="12" fill="#134e4a">Score: is the answer good?</text>
+
+  <!-- final answer -->
+  <rect x="540" y="378" width="130" height="40" rx="10" fill="#f1f5f9" stroke="#94a3b8"/>
+  <text x="605" y="403" text-anchor="middle" font-size="13" fill="#0f172a">final answer</text>
+
+  <!-- arrows: main path -->
+  <line x1="144" y1="214" x2="174" y2="214" stroke="#0f766e" stroke-width="2" marker-end="url(#t)"/>
+  <line x1="308" y1="214" x2="342" y2="214" stroke="#0f766e" stroke-width="2" marker-end="url(#t)"/>
+  <line x1="484" y1="214" x2="518" y2="214" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+  <!-- yes -> guard -->
+  <path d="M590,168 L590,125 L698,125" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+  <text x="600" y="148" font-size="12" fill="#475569">yes</text>
+  <!-- guard -> run tool -->
+  <path d="M850,125 L906,125 L906,176" fill="none" stroke="#0f766e" stroke-width="2" marker-end="url(#t)"/>
+  <!-- run tool -> jev as tool (optional) -->
+  <line x1="906" y1="250" x2="906" y2="298" stroke="#0f766e" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#t)"/>
+  <!-- feed result back to LLM -->
+  <path d="M870,240 C 780,275 520,275 450,252" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+  <text x="765" y="254" text-anchor="middle" font-size="12" fill="#475569">feed result back</text>
+  <!-- no -> done gate -->
+  <line x1="590" y1="260" x2="590" y2="298" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+  <text x="600" y="287" font-size="12" fill="#475569">no</text>
+  <!-- done -> final -->
+  <line x1="590" y1="350" x2="598" y2="376" stroke="#0f766e" stroke-width="2" marker-end="url(#t)"/>
+  <!-- not done -> back to LLM -->
+  <path d="M490,325 C 430,325 414,300 414,252" fill="none" stroke="#0f766e" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#t)"/>
+  <text x="350" y="298" font-size="12" fill="#0f766e">not done</text>
+  <!-- final -> judge -->
+  <line x1="540" y1="398" x2="502" y2="398" stroke="#0f766e" stroke-width="2" marker-end="url(#t)"/>
+</svg>

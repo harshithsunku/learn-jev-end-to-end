@@ -1,0 +1,18 @@
+2026-09-22T13:42:47Z INFO  worker job=email-digest status=done duration=9s
+2026-09-22T13:49:44Z INFO  worker job=email-digest status=done duration=5s
+2026-09-22T13:51:24Z WARN  worker disk usage 81% on /var/lib/queue
+2026-09-22T13:56:55Z INFO  worker job=email-digest status=done duration=4s
+2026-09-22T14:02:05Z WARN  worker job=invoice-sync retry=1 reason=db timeout
+2026-09-22T14:03:10Z WARN  worker job=invoice-sync retry=2 reason=db timeout
+2026-09-22T14:03:17Z INFO  worker job=email-digest status=done duration=3s
+2026-09-22T14:04:25Z WARN  worker job=invoice-sync retry=3 reason=db timeout
+2026-09-22T14:05:04Z WARN  worker job=invoice-sync retry=4 reason=db timeout
+2026-09-22T14:06:45Z WARN  worker job=invoice-sync retry=5 reason=db timeout
+2026-09-22T14:07:17Z WARN  worker job=invoice-sync retry=6 reason=db timeout
+2026-09-22T14:08:25Z WARN  worker disk usage 81% on /var/lib/queue
+2026-09-22T14:08:50Z WARN  worker job=invoice-sync retry=7 reason=db timeout
+2026-09-22T14:09:26Z WARN  worker job=invoice-sync retry=8 reason=db timeout
+2026-09-22T14:10:41Z INFO  worker job=email-digest status=done duration=8s
+2026-09-22T14:17:27Z INFO  worker job=email-digest status=done duration=7s
+2026-09-22T14:24:32Z INFO  worker job=email-digest status=done duration=2s
+2026-09-22T14:25:55Z WARN  worker disk usage 81% on /var/lib/queue

@@ -1,0 +1,24 @@
+{"id": "t001", "kind": "alert", "text": "[FIRING] worker-3: disk usage 81% on /var/lib/queue", "label": {"desk": "oncall_desk", "urgency": 1, "needs_human": false}}
+{"id": "t002", "kind": "email", "text": "From: vip@bigcustomer.example - We were charged $48,000 instead of $4,800. Refund it today or we cancel.", "label": {"desk": "human", "urgency": 3, "needs_human": true}}
+{"id": "t003", "kind": "question", "text": "My manager says I should ask you whether we should migrate to the new pricing tier. Thoughts?", "label": {"desk": "human", "urgency": 1, "needs_human": true}}
+{"id": "t004", "kind": "email", "text": "From: legal@bigcorp.example - We intend to pursue damages for last week's outage unless we hear from your counsel by Friday.", "label": {"desk": "human", "urgency": 3, "needs_human": true}}
+{"id": "t005", "kind": "alert", "text": "[FIRING] cert-monitor: api.acme.example TLS certificate expires in 2 days", "label": {"desk": "oncall_desk", "urgency": 2, "needs_human": false}}
+{"id": "t006", "kind": "code", "text": "PR #519 adds:\n\ndef ping(host):\n    import os\n    os.system('ping -c 1 ' + host)", "label": {"desk": "security_desk", "urgency": 2, "needs_human": false}}
+{"id": "t007", "kind": "email", "text": "From: tom.lee@customer.example - Could you confirm the SLA on our renewal and send the updated order form?", "label": {"desk": "email_desk", "urgency": 1, "needs_human": false}}
+{"id": "t008", "kind": "alert", "text": "[FIRING] db-primary: connection pool exhausted (max=100) - api 5xx rate 38%", "label": {"desk": "oncall_desk", "urgency": 3, "needs_human": false}}
+{"id": "t009", "kind": "sms", "text": "User forwarded: 'ACME BANK ALERT: unusual activity. Verify now: http://acme-bank-secure.test/login' - is this real?", "label": {"desk": "scam_desk", "urgency": 2, "needs_human": false}}
+{"id": "t010", "kind": "code", "text": "PR #512 adds:\n\ndef find_user(db, name):\n    return db.execute(f\"SELECT * FROM users WHERE name = '{name}'\").fetchall()", "label": {"desk": "security_desk", "urgency": 2, "needs_human": false}}
+{"id": "t011", "kind": "email", "text": "From: sam@customer.example - Can we push tomorrow's 3pm call to Thursday?", "label": {"desk": "email_desk", "urgency": 1, "needs_human": false}}
+{"id": "t012", "kind": "email", "text": "From: ap@supplier.example - Invoice 7781 is 45 days overdue; service suspension in 5 business days.", "label": {"desk": "email_desk", "urgency": 2, "needs_human": false}}
+{"id": "t013", "kind": "alert", "text": "[FIRING] auth: 1,420 failed logins in 5m from 203.0.113.45", "label": {"desk": "oncall_desk", "urgency": 3, "needs_human": false}}
+{"id": "t014", "kind": "code", "text": "PR #523 adds:\n\ndef add(a, b):\n    \"\"\"Add two integers.\"\"\"\n    return a + b", "label": {"desk": "security_desk", "urgency": 0, "needs_human": false}}
+{"id": "t015", "kind": "code", "text": "Snippet from config.py:\n\nDB_HOST = 'prod-db.internal'\nDB_PASSWORD = 'Winter2026!'  # prod database", "label": {"desk": "security_desk", "urgency": 3, "needs_human": false}}
+{"id": "t016", "kind": "question", "text": "How many API requests per minute can a Pro plan workspace make before getting 429s?", "label": {"desk": "docs_desk", "urgency": 1, "needs_human": false}}
+{"id": "t017", "kind": "sms", "text": "User forwarded: 'Hi mum, new number, can you send $400?' - my mother got this, what should she do?", "label": {"desk": "scam_desk", "urgency": 2, "needs_human": false}}
+{"id": "t018", "kind": "email", "text": "Forwarded by finance: 'CEO: buy 5 gift cards and send me the codes, keep it confidential.'", "label": {"desk": "scam_desk", "urgency": 2, "needs_human": false}}
+{"id": "t019", "kind": "question", "text": "Which regions support data residency in the EU?", "label": {"desk": "docs_desk", "urgency": 1, "needs_human": false}}
+{"id": "t020", "kind": "question", "text": "How do I enable SAML single sign-on for my organization?", "label": {"desk": "docs_desk", "urgency": 1, "needs_human": false}}
+{"id": "t021", "kind": "email", "text": "From: jobs@candidate.example - I'd like to follow up on my interview from last week.", "label": {"desk": "human", "urgency": 1, "needs_human": true}}
+{"id": "t022", "kind": "question", "text": "How do I roll back a bad deploy?", "label": {"desk": "docs_desk", "urgency": 2, "needs_human": false}}
+{"id": "t023", "kind": "question", "text": "What's the retention period for automated backups, and can I restore to a point in time?", "label": {"desk": "docs_desk", "urgency": 1, "needs_human": false}}
+{"id": "t024", "kind": "alert", "text": "[RESOLVED] checkout-api p95 latency back under 400ms", "label": {"desk": "oncall_desk", "urgency": 0, "needs_human": false}}

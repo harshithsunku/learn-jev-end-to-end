@@ -1,0 +1,20 @@
+{"id": "e001", "question": "What is the broadcast address of 192.168.10.0/24?", "reference": "192.168.10.255", "candidate": "192.168.10.255", "label": {"correct": true}}
+{"id": "e002", "question": "What port does HTTPS use by default?", "reference": "443", "candidate": "Port 8443 is the standard HTTPS port.", "label": {"correct": false}}
+{"id": "e003", "question": "Which HTTP status code means Too Many Requests?", "reference": "429", "candidate": "That's 429 Too Many Requests; honour the Retry-After header.", "label": {"correct": true}}
+{"id": "e004", "question": "What does DNS stand for?", "reference": "Domain Name System", "candidate": "Dynamic Network Service.", "label": {"correct": false}}
+{"id": "e005", "question": "Which protocol does ping use?", "reference": "ICMP", "candidate": "ping uses UDP on port 7.", "label": {"correct": false}}
+{"id": "e006", "question": "What is the default SSH port?", "reference": "22", "candidate": "SSH uses port 22 unless you change it.", "label": {"correct": true}}
+{"id": "e007", "question": "What port does HTTPS use by default?", "reference": "443", "candidate": "HTTPS listens on TCP 443 by default.", "label": {"correct": true}}
+{"id": "e008", "question": "How long are automated backups kept on Enterprise?", "reference": "35 days", "candidate": "Enterprise keeps automated backups for 35 days and supports point-in-time recovery.", "label": {"correct": true}}
+{"id": "e009", "question": "How many usable hosts are in a /26 IPv4 subnet?", "reference": "62", "candidate": "A /26 has 64 addresses, so 62 usable hosts.", "label": {"correct": true}}
+{"id": "e010", "question": "How many usable hosts are in a /26 IPv4 subnet?", "reference": "62", "candidate": "A /26 gives you 64 usable hosts.", "label": {"correct": false}}
+{"id": "e011", "question": "How long are automated backups kept on Enterprise?", "reference": "35 days", "candidate": "14 days.", "label": {"correct": false}}
+{"id": "e012", "question": "On the Pro plan, how many API requests per minute are allowed?", "reference": "600", "candidate": "Pro workspaces can make 600 requests per minute.", "label": {"correct": true}}
+{"id": "e013", "question": "What does SEV1 mean in Acme's incident process?", "reference": "A full outage or data loss", "candidate": "SEV1 means minor impact to a single customer.", "label": {"correct": false}}
+{"id": "e014", "question": "What is the broadcast address of 192.168.10.0/24?", "reference": "192.168.10.255", "candidate": "192.168.10.0 is the broadcast address.", "label": {"correct": false}}
+{"id": "e015", "question": "Which protocol does ping use?", "reference": "ICMP", "candidate": "ping sends ICMP echo requests.", "label": {"correct": true}}
+{"id": "e016", "question": "On the Pro plan, how many API requests per minute are allowed?", "reference": "600", "candidate": "Pro allows 6,000 requests per minute.", "label": {"correct": false}}
+{"id": "e017", "question": "What does DNS stand for?", "reference": "Domain Name System", "candidate": "Domain Name System.", "label": {"correct": true}}
+{"id": "e018", "question": "What is the default SSH port?", "reference": "22", "candidate": "SSH uses port 23.", "label": {"correct": false}}
+{"id": "e019", "question": "What does SEV1 mean in Acme's incident process?", "reference": "A full outage or data loss", "candidate": "SEV1 is a full outage or data loss, and it pages on-call immediately.", "label": {"correct": true}}
+{"id": "e020", "question": "Which HTTP status code means Too Many Requests?", "reference": "429", "candidate": "503 Service Unavailable.", "label": {"correct": false}}

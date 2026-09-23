@@ -1,0 +1,28 @@
+[project]
+name = "jev-zero-to-agent"
+version = "0.1.0"
+description = "Jev (fast brain) + LLM (slow brain): a hands-on course from your first Jev call to 13 production-style agent use cases. One OpenRouter key."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    "openai>=1.60",
+    "typesafe-sdk>=0.7.1",
+    "system-one-adapter[openai]",
+    "python-dotenv>=1.0",
+    "httpx>=0.27",
+    "matplotlib>=3.8",
+    "jupyterlab>=4.2",
+    "nbconvert>=7.16",
+    "ipykernel>=6.29",
+]
+
+[project.optional-dependencies]
+ui = ["gradio>=5.0"]
+frameworks = ["langchain-typesafe", "pydantic-ai-slim[typesafe]"]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 110

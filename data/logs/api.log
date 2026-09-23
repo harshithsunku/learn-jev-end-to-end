@@ -1,0 +1,78 @@
+2026-09-22T13:40:40Z INFO  api GET /v1/projects 200 34ms req=13278
+2026-09-22T13:41:15Z INFO  api GET /v1/projects 200 48ms req=28289
+2026-09-22T13:42:47Z INFO  api GET /v1/projects 200 33ms req=98696
+2026-09-22T13:43:05Z INFO  api GET /v1/projects 200 74ms req=14165
+2026-09-22T13:44:01Z INFO  api GET /v1/projects 200 31ms req=38657
+2026-09-22T13:45:32Z INFO  api GET /v1/projects 200 23ms req=83563
+2026-09-22T13:46:41Z INFO  api GET /v1/projects 200 89ms req=64987
+2026-09-22T13:47:14Z INFO  api GET /v1/projects 200 77ms req=87236
+2026-09-22T13:48:17Z INFO  api GET /v1/projects 200 20ms req=30926
+2026-09-22T13:49:44Z INFO  api GET /v1/projects 200 74ms req=54597
+2026-09-22T13:50:09Z INFO  api GET /v1/projects 200 47ms req=54118
+2026-09-22T13:51:24Z INFO  api GET /v1/projects 200 32ms req=57052
+2026-09-22T13:52:54Z DEBUG api cache hit ratio=88%
+2026-09-22T13:52:54Z INFO  api GET /v1/projects 200 64ms req=89131
+2026-09-22T13:53:51Z INFO  api GET /v1/projects 200 25ms req=70217
+2026-09-22T13:54:34Z INFO  api GET /v1/projects 200 35ms req=59615
+2026-09-22T13:55:05Z INFO  api GET /v1/projects 200 90ms req=48427
+2026-09-22T13:56:55Z INFO  api GET /v1/projects 200 66ms req=85674
+2026-09-22T13:57:45Z INFO  api GET /v1/projects 200 28ms req=16006
+2026-09-22T13:58:42Z INFO  api GET /v1/projects 200 49ms req=47930
+2026-09-22T13:59:05Z INFO  api GET /v1/projects 200 49ms req=23238
+2026-09-22T14:00:24Z INFO  api GET /v1/projects 200 55ms req=69429
+2026-09-22T14:01:23Z INFO  api GET /v1/projects 200 40ms req=58520
+2026-09-22T14:02:07Z ERROR api POST /v1/orders 500 upstream=db timeout after 5000ms req=50306
+2026-09-22T14:02:15Z ERROR api POST /v1/orders 500 upstream=db timeout after 5000ms req=41571
+2026-09-22T14:02:22Z INFO  api GET /v1/projects 200 46ms req=97841
+2026-09-22T14:02:56Z ERROR api POST /v1/orders 500 upstream=db timeout after 5000ms req=20322
+2026-09-22T14:03:08Z ERROR api POST /v1/orders 500 upstream=db timeout after 5000ms req=82063
+2026-09-22T14:03:17Z INFO  api GET /v1/projects 200 29ms req=89840
+2026-09-22T14:03:46Z ERROR api POST /v1/orders 500 upstream=db timeout after 5000ms req=19071
+2026-09-22T14:03:48Z ERROR api POST /v1/orders 500 upstream=db timeout after 5000ms req=26483
+2026-09-22T14:04:16Z ERROR api POST /v1/orders 500 upstream=db timeout after 5000ms req=89507
+2026-09-22T14:04:27Z ERROR api POST /v1/orders 500 upstream=db timeout after 5000ms req=80686
+2026-09-22T14:04:34Z INFO  api GET /v1/projects 200 51ms req=31417
+2026-09-22T14:04:48Z ERROR api POST /v1/orders 500 upstream=db timeout after 5000ms req=50857
+2026-09-22T14:05:07Z ERROR api POST /v1/orders 500 upstream=db timeout after 5000ms req=39451
+2026-09-22T14:05:29Z DEBUG api cache hit ratio=97%
+2026-09-22T14:05:29Z INFO  api GET /v1/projects 200 68ms req=45382
+2026-09-22T14:05:42Z ERROR api POST /v1/orders 500 upstream=db timeout after 5000ms req=67422
+2026-09-22T14:05:57Z ERROR api POST /v1/orders 500 upstream=db timeout after 5000ms req=69177
+2026-09-22T14:06:14Z ERROR api POST /v1/orders 500 upstream=db timeout after 5000ms req=19305
+2026-09-22T14:06:14Z INFO  api GET /v1/projects 200 61ms req=17331
+2026-09-22T14:06:21Z ERROR api POST /v1/orders 500 upstream=db timeout after 5000ms req=87110
+2026-09-22T14:06:35Z ERROR api POST /v1/orders 500 upstream=db timeout after 5000ms req=87128
+2026-09-22T14:07:04Z ERROR api POST /v1/orders 500 upstream=db timeout after 5000ms req=41195
+2026-09-22T14:07:04Z ERROR api POST /v1/orders 500 upstream=db timeout after 5000ms req=53309
+2026-09-22T14:07:40Z ERROR api POST /v1/orders 500 upstream=db timeout after 5000ms req=40007
+2026-09-22T14:07:52Z INFO  api GET /v1/projects 200 24ms req=51347
+2026-09-22T14:08:25Z INFO  api GET /v1/projects 200 54ms req=18675
+2026-09-22T14:08:34Z ERROR api POST /v1/orders 500 upstream=db timeout after 5000ms req=84847
+2026-09-22T14:08:36Z ERROR api POST /v1/orders 500 upstream=db timeout after 5000ms req=41850
+2026-09-22T14:08:42Z ERROR api POST /v1/orders 500 upstream=db timeout after 5000ms req=38080
+2026-09-22T14:09:06Z ERROR api POST /v1/orders 500 upstream=db timeout after 5000ms req=96374
+2026-09-22T14:09:13Z INFO  api GET /v1/projects 200 60ms req=37869
+2026-09-22T14:09:27Z ERROR api POST /v1/orders 500 upstream=db timeout after 5000ms req=65519
+2026-09-22T14:09:30Z ERROR api POST /v1/orders 500 upstream=db timeout after 5000ms req=34957
+2026-09-22T14:10:05Z INFO  api deploy rollback to release r-2291 completed
+2026-09-22T14:10:41Z INFO  api GET /v1/projects 200 83ms req=61856
+2026-09-22T14:11:08Z INFO  api GET /v1/projects 200 51ms req=83579
+2026-09-22T14:12:34Z INFO  api GET /v1/projects 200 53ms req=86622
+2026-09-22T14:13:27Z INFO  api GET /v1/projects 200 71ms req=57447
+2026-09-22T14:14:14Z INFO  api GET /v1/projects 200 37ms req=76784
+2026-09-22T14:15:31Z INFO  api GET /v1/projects 200 31ms req=16175
+2026-09-22T14:16:09Z INFO  api GET /v1/projects 200 40ms req=99192
+2026-09-22T14:17:27Z INFO  api GET /v1/projects 200 28ms req=60432
+2026-09-22T14:18:29Z DEBUG api cache hit ratio=97%
+2026-09-22T14:18:29Z INFO  api GET /v1/projects 200 87ms req=42953
+2026-09-22T14:19:55Z INFO  api GET /v1/projects 200 21ms req=99166
+2026-09-22T14:20:46Z INFO  api GET /v1/projects 200 34ms req=99353
+2026-09-22T14:21:17Z INFO  api GET /v1/projects 200 63ms req=24621
+2026-09-22T14:22:18Z INFO  api GET /v1/projects 200 75ms req=30730
+2026-09-22T14:23:29Z INFO  api GET /v1/projects 200 20ms req=44522
+2026-09-22T14:24:32Z INFO  api GET /v1/projects 200 42ms req=76542
+2026-09-22T14:25:55Z INFO  api GET /v1/projects 200 58ms req=93748
+2026-09-22T14:26:12Z INFO  api GET /v1/projects 200 39ms req=59009
+2026-09-22T14:27:48Z INFO  api GET /v1/projects 200 40ms req=80697
+2026-09-22T14:28:49Z INFO  api GET /v1/projects 200 87ms req=10074
+2026-09-22T14:29:20Z INFO  api GET /v1/projects 200 82ms req=12552

@@ -1,0 +1,40 @@
+{"id": "s001", "from": "+1 555 0188", "text": "You are selected for our loyalty reward! Reply YES and pay 2.99 shipping to receive your free iPhone 18.", "label": {"is_scam": true, "scam_type": "prize"}}
+{"id": "s002", "from": "GitHub", "text": "GitHub: your authentication code is 719204.", "label": {"is_scam": false, "scam_type": "none"}}
+{"id": "s003", "from": "+1 555 0170", "text": "Hi mum, I dropped my phone in the toilet, this is my new number. Can you send $400 for a new one? I'll pay you back tomorrow x", "label": {"is_scam": true, "scam_type": "family_impersonation"}}
+{"id": "s004", "from": "+1 555 0193", "text": "ALERT: Your Coinbase account will be closed. Verify your wallet seed phrase at coinbase-verify.test", "label": {"is_scam": true, "scam_type": "crypto_investment"}}
+{"id": "s005", "from": "+1 555 0181", "text": "Guaranteed 5x returns on BTC in 30 days. Limited slots. Join our VIP signal group: t.me/+cryptoVIPxx", "label": {"is_scam": true, "scam_type": "crypto_investment"}}
+{"id": "s006", "from": "+1 555 0160", "text": "Micros0ft Support: your PC is infected. Call +1 555 0161 immediately so a technician can remove the virus.", "label": {"is_scam": true, "scam_type": "tech_support"}}
+{"id": "s007", "from": "Acme IT", "text": "Acme IT: planned VPN maintenance tonight 23:00-01:00. No action needed.", "label": {"is_scam": false, "scam_type": "none"}}
+{"id": "s008", "from": "ACMEBANK", "text": "Acme Bank: a purchase of $54.20 at GROCERYMART was approved on your card ending 1234. Not you? Call the number on the back of your card.", "label": {"is_scam": false, "scam_type": "none"}}
+{"id": "s009", "from": "+1 555 0111", "text": "E-ZPass: You have an unpaid toll of $6.99. Pay by today to avoid a $50 late fee: https://ezpass-tolls.test", "label": {"is_scam": true, "scam_type": "toll"}}
+{"id": "s010", "from": "+1 555 0165", "text": "Apple ID locked due to suspicious login. Unlock at appleid-unlock.test within 24h.", "label": {"is_scam": true, "scam_type": "tech_support"}}
+{"id": "s011", "from": "VOTE", "text": "County Elections: polling places are open 7am-8pm on Nov 3. Find yours at county.example/vote", "label": {"is_scam": false, "scam_type": "none"}}
+{"id": "s012", "from": "+1 555 0142", "text": "ACME BANK ALERT: unusual activity on your card. Verify now or it will be blocked: http://acme-bank-secure.test/login", "label": {"is_scam": true, "scam_type": "bank"}}
+{"id": "s013", "from": "Coach Mike", "text": "Practice moved to 5pm tomorrow because of the rain.", "label": {"is_scam": false, "scam_type": "none"}}
+{"id": "s014", "from": "+1 555 0180", "text": "Wrong number? Oh sorry! Anyway, since we're chatting, my uncle has a crypto trading app returning 12% weekly. Want the link?", "label": {"is_scam": true, "scam_type": "crypto_investment"}}
+{"id": "s015", "from": "Alex (work)", "text": "Hey, prod is fine now, the rollback worked. Sync tomorrow?", "label": {"is_scam": false, "scam_type": "none"}}
+{"id": "s016", "from": "+1 555 0192", "text": "Your DHL shipment is waiting. Confirm delivery & pay 0.50 fee: dhl-express-parcel.test/confirm", "label": {"is_scam": true, "scam_type": "delivery"}}
+{"id": "s017", "from": "Mom", "text": "Running late, can you pick up milk on the way home?", "label": {"is_scam": false, "scam_type": "none"}}
+{"id": "s018", "from": "Sis", "text": "Landed! Will call when I'm at the hotel", "label": {"is_scam": false, "scam_type": "none"}}
+{"id": "s019", "from": "AIRLINE", "text": "Flight AC123 to Toronto is delayed. New departure 18:45, gate B12.", "label": {"is_scam": false, "scam_type": "none"}}
+{"id": "s020", "from": "CARRIER", "text": "Your package from ShopCo was delivered to the front door at 2:14pm.", "label": {"is_scam": false, "scam_type": "none"}}
+{"id": "s021", "from": "+1 555 0191", "text": "Netflix: your payment failed. Update billing within 24h or lose access: netflix-billing-update.test", "label": {"is_scam": true, "scam_type": "bank"}}
+{"id": "s022", "from": "UTILITY", "text": "CityPower: your bill of $82.10 is due Oct 5. Pay in the CityPower app or at citypower.example.", "label": {"is_scam": false, "scam_type": "none"}}
+{"id": "s023", "from": "+1 555 0156", "text": "We reviewed your resume. Data entry role, $45/hr, start today. Just pay a $50 onboarding fee to begin.", "label": {"is_scam": true, "scam_type": "job"}}
+{"id": "s024", "from": "ShopCo", "text": "ShopCo: Flash sale! 20% off tonight only with code SAVE20. Reply STOP to opt out.", "label": {"is_scam": false, "scam_type": "none"}}
+{"id": "s025", "from": "GYM", "text": "FitClub: your membership renews on Oct 1 for $29.99. Manage it in the app.", "label": {"is_scam": false, "scam_type": "none"}}
+{"id": "s026", "from": "+1 555 0171", "text": "Dad it's me, I'm in trouble and can't talk. Please buy 3 Apple gift cards and text me the codes. Don't tell mom.", "label": {"is_scam": true, "scam_type": "family_impersonation"}}
+{"id": "s027", "from": "+44 7700 900123", "text": "Royal Parcel: your parcel is held due to unpaid customs fee of 1.99. Pay here: http://parcel-redelivery.test/pay", "label": {"is_scam": true, "scam_type": "delivery"}}
+{"id": "s028", "from": "+1 555 0199", "text": "Your account has been suspended. Log in within 2 hrs to restore access: bit.ly/3xAcmeBnk", "label": {"is_scam": true, "scam_type": "bank"}}
+{"id": "s029", "from": "RideCo", "text": "Your driver Ana is arriving in a grey Corolla, plate 7XYZ123.", "label": {"is_scam": false, "scam_type": "none"}}
+{"id": "s030", "from": "+1 555 0190", "text": "IRS: you are eligible for a tax refund of $812.40. Submit your bank details at irs-refund-portal.test", "label": {"is_scam": true, "scam_type": "bank"}}
+{"id": "s031", "from": "PHARMACY", "text": "Your prescription is ready for pickup at Main St. Pharmacy.", "label": {"is_scam": false, "scam_type": "none"}}
+{"id": "s032", "from": "Landlord", "text": "Hi, the plumber will come by Thursday morning to fix the sink. Is 10am ok?", "label": {"is_scam": false, "scam_type": "none"}}
+{"id": "s033", "from": "Jordan", "text": "Game night at mine on Friday? Bring snacks :)", "label": {"is_scam": false, "scam_type": "none"}}
+{"id": "s034", "from": "+1 555 0133", "text": "Hi! I'm Emma from a recruiting agency. Part-time remote job, earn $300-$800/day liking videos. WhatsApp me: +1 555 0134", "label": {"is_scam": true, "scam_type": "job"}}
+{"id": "s035", "from": "SCHOOL", "text": "Lincoln Elementary: early dismissal Friday at 12:30 for staff training.", "label": {"is_scam": false, "scam_type": "none"}}
+{"id": "s036", "from": "+1 555 0101", "text": "Congratulations! You've won a $1000 ShopCo gift card. Claim before midnight: http://shopco-winner.test", "label": {"is_scam": true, "scam_type": "prize"}}
+{"id": "s037", "from": "+1 555 0177", "text": "USPS: We could not deliver your package. Update your address: https://usps-redeliver.test/track", "label": {"is_scam": true, "scam_type": "delivery"}}
+{"id": "s038", "from": "Dr Patel Clinic", "text": "Reminder: dental appointment tomorrow at 9:30am. Reply C to confirm or R to reschedule.", "label": {"is_scam": false, "scam_type": "none"}}
+{"id": "s039", "from": "+1 555 0112", "text": "FINAL NOTICE: outstanding toll balance. Settle now at tollpay-center.test to avoid license suspension.", "label": {"is_scam": true, "scam_type": "toll"}}
+{"id": "s040", "from": "ACMEBANK", "text": "Acme Bank: your one-time passcode is 482913. It expires in 10 minutes. We will never ask you for this code.", "label": {"is_scam": false, "scam_type": "none"}}
