@@ -18,3 +18,4 @@ reports/
 
 # docs build output
 site/
+.cache/
