@@ -15,3 +15,6 @@ reports/
 .agent_checkpoint.json
 *.log.tmp
 .gradio/
+
+# docs build output
+site/

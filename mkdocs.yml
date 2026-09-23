@@ -1,0 +1,126 @@
+site_name: Learn Jev End to End
+site_description: >-
+  A free, hands-on course: learn Jev, TypeSafe's fast decision model, and build 13 AI agent use cases
+  with a fast brain (Jev) and a slow brain (LLM). One OpenRouter key.
+site_url: https://harshithsunku.github.io/learn-jev-end-to-end/
+repo_url: https://github.com/harshithsunku/learn-jev-end-to-end
+repo_name: learn-jev-end-to-end
+edit_uri: edit/main/docs/
+copyright: MIT licensed. Not affiliated with TypeSafe AI, OpenRouter or OpenAI.
+
+theme:
+  name: material
+  custom_dir: overrides
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - navigation.instant
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - toc.follow
+
+extra_css:
+  - assets/extra.css
+
+plugins:
+  - search
+  - mkdocs-jupyter:
+      include: ["course/*.ipynb"]
+      execute: false
+      include_source: true
+      include_requirejs: true
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.snippets:
+      base_path: ["."]
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/harshithsunku/learn-jev-end-to-end
+
+nav:
+  - Home: index.md
+  - Start here:
+      - start/index.md
+      - Jev in 5 minutes: learn/what-is-jev.md
+      - Fast brain, slow brain: learn/fast-and-slow.md
+      - When not to use Jev: learn/when-not-to-use-jev.md
+  - Course:
+      - course/index.md
+      - 01 · Hello, Jev: course/01_hello_jev.ipynb
+      - 02 · Jev vs LLMs: course/02_jev_vs_llm.ipynb
+      - 03 · The agent loop + Jev: course/03_agent_loop_with_jev.ipynb
+      - 04 · Email triage job: course/04_email_triage_job.ipynb
+      - 05 · SMS scam shield: course/05_sms_scam_shield.ipynb
+      - 06 · Code vulnerability hunter: course/06_code_vuln_hunter.ipynb
+      - 07 · Guardrails: course/07_auto_mode_guardrails.ipynb
+      - 08 · Model and tool router: course/08_model_and_tool_router.ipynb
+      - 09 · On-call log triage: course/09_oncall_log_triage.ipynb
+      - 10 · RAG relevance and citations: course/10_rag_relevance_and_citations.ipynb
+      - 11 · Jev as judge: course/11_jev_as_judge_and_evals.ipynb
+      - 12 · Capstone ops copilot: course/12_capstone_ops_copilot.ipynb
+  - Use cases: use-cases/index.md
+  - Guides:
+      - Run the email job: guides/email-job.md
+      - The Jev Playground app: guides/playground.md
+      - No Jev access yet?: guides/no-jev-access.md
+      - Use your own data: guides/your-own-data.md
+  - Benchmarks: benchmarks.md
+  - Reference:
+      - Cheat sheet: reference/cheatsheet.md
+      - Configuration: reference/configuration.md
+      - Troubleshooting: reference/troubleshooting.md
+      - FAQ: reference/faq.md
+      - Contributing: reference/contributing.md

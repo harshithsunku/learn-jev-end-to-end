@@ -7,7 +7,7 @@ The same logic as notebook 04, packaged as a script you can schedule.
     uv run python jobs/email_triage.py --source imap --limit 50 # your real mailbox, READ-ONLY
 
 cron (weekdays, every 30 minutes, 8:00-18:00):
-    */30 8-18 * * 1-5  cd /path/to/jev-zero-to-agent && uv run python jobs/email_triage.py --source imap --draft-replies
+    */30 8-18 * * 1-5  cd /path/to/learn-jev-end-to-end && uv run python jobs/email_triage.py --source imap --draft-replies
 
 Safety: IMAP is opened read-only (select readonly=True, BODY.PEEK[]), so nothing is marked read, moved
 or deleted. The job never sends email. Drafts go into the report for a human to use.

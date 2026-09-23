@@ -273,7 +273,7 @@ def race(text, question):
 
 
 # ---------------------------------------------------------------- UI
-with gr.Blocks(title="Jev Playground - jev-zero-to-agent") as demo:
+with gr.Blocks(title="Jev Playground - learn-jev-end-to-end") as demo:
     gr.Markdown(f"# Jev Playground\nFast brain **{JEV_MODEL if JEV_BACKEND != 'adapter' else MODEL + ' (adapter)'}**"
                 f" + slow brain **{MODEL}**, one OpenRouter key. Every tool here is read-only or dry-run.")
 

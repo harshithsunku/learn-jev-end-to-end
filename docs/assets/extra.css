@@ -1,0 +1,54 @@
+/* Learn Jev End to End - small touches on top of Material */
+:root {
+  --jev-fast: #0f766e;
+  --jev-slow: #475569;
+}
+.md-typeset .hero {
+  text-align: center;
+  padding: 1.2rem 0 0.4rem;
+}
+.md-typeset .hero h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 0.4rem;
+}
+.md-typeset .hero .tagline {
+  font-size: 1.15rem;
+  opacity: 0.85;
+  margin: 0 auto 1.2rem;
+  max-width: 40rem;
+}
+.md-typeset .hero .md-button {
+  margin: 0.25rem;
+}
+.md-typeset .stat-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  margin: 1rem 0 1.6rem;
+}
+.md-typeset .stat {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.6rem;
+  padding: 0.6rem 1rem;
+  text-align: center;
+}
+.md-typeset .stat b {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--md-primary-fg-color);
+}
+.md-typeset .fast { color: var(--jev-fast); font-weight: 700; }
+[data-md-color-scheme="slate"] .md-typeset .fast { color: #5eead4; }
+.md-typeset img.diagram {
+  border-radius: 0.6rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+}
+.md-typeset .hero h1 { color: var(--md-default-fg-color); letter-spacing: -0.02em; }
+.md-typeset .stat { flex: 1 1 7rem; max-width: 11rem; min-width: 7rem; }
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .hero h1 { font-size: 1.9rem; }
+  .md-typeset .stat { padding: 0.5rem 0.4rem; }
+  .md-typeset .stat b { font-size: 1.2rem; }
+}

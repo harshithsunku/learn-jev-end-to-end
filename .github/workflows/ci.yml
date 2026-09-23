@@ -12,9 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v5
-      - run: uv sync --extra ui
+      - run: uv sync --extra ui --extra docs
       - name: Notebooks valid, shared cells identical, no secrets, code compiles
         run: uv run python scripts/check_notebooks.py
+      - name: Docs site builds with no broken links
+        run: uv run mkdocs build --strict
       - name: Scripts compile
         run: uv run python -m py_compile app.py jobs/email_triage.py scripts/doctor.py scripts/check_notebooks.py
 

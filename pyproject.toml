@@ -1,7 +1,7 @@
 [project]
-name = "jev-zero-to-agent"
+name = "learn-jev-end-to-end"
 version = "0.1.0"
-description = "Jev (fast brain) + LLM (slow brain): a hands-on course from your first Jev call to 13 production-style agent use cases. One OpenRouter key."
+description = "Learn Jev end to end: a hands-on course from your first Jev call to 13 AI agent use cases, with a fast brain (Jev) and a slow brain (LLM). One OpenRouter key."
 readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.10"
@@ -20,6 +20,7 @@ dependencies = [
 [project.optional-dependencies]
 ui = ["gradio>=5.0"]
 frameworks = ["langchain-typesafe", "pydantic-ai-slim[typesafe]"]
+docs = ["mkdocs>=1.6,<2", "mkdocs-material>=9.7", "mkdocs-jupyter>=0.26"]
 
 [tool.uv]
 package = false

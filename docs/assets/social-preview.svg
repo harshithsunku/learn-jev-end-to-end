@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640" font-family="Inter, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#042f2e"/>
+      <stop offset="0.55" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#134e4a"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5eead4" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#5eead4" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#5eead4" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#ffffff" fill-opacity="0.07"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect width="1280" height="640" fill="url(#dots)"/>
+  <g transform="translate(0,90)">
+  
+  
+
+  <!-- left: words -->
+  <text x="72" y="92" font-size="20" font-weight="600" fill="#99f6e4" letter-spacing="3">A FREE, HANDS-ON COURSE</text>
+  <text x="72" y="168" font-size="68" font-weight="800" fill="#ffffff" letter-spacing="-1.5">Learn Jev</text>
+  <text x="72" y="238" font-size="68" font-weight="800" fill="#ffffff" letter-spacing="-1.5">end to end</text>
+  <text x="72" y="288" font-size="24" fill="#ccfbf1">Build AI agents with a fast brain and a slow brain.</text>
+
+  <g font-size="18" font-weight="600" fill="#042f2e">
+    <rect x="72" y="318" width="150" height="40" rx="20" fill="#5eead4"/>
+    <text x="147" y="344" text-anchor="middle">12 notebooks</text>
+    <rect x="234" y="318" width="150" height="40" rx="20" fill="#5eead4"/>
+    <text x="309" y="344" text-anchor="middle">13 use cases</text>
+    <rect x="396" y="318" width="120" height="40" rx="20" fill="#5eead4"/>
+    <text x="456" y="344" text-anchor="middle">1 API key</text>
+    <rect x="528" y="318" width="170" height="40" rx="20" fill="#fde68a"/>
+    <text x="613" y="344" text-anchor="middle">&lt; $0.20 total</text>
+  </g>
+
+  <!-- right: fast brain / slow brain -->
+  <g transform="translate(800,70)">
+    <!-- fast brain card -->
+    <rect x="0" y="0" width="200" height="120" rx="18" fill="#ffffff" fill-opacity="0.1" stroke="#5eead4" stroke-width="2"/>
+    <circle cx="44" cy="44" r="26" fill="#fde68a"/>
+    <path d="M48 24 L34 48 H44 L40 66 L56 40 H46 Z" fill="#0f766e"/>
+    <text x="82" y="42" font-size="22" font-weight="800" fill="#ffffff">Jev</text>
+    <text x="82" y="64" font-size="15" fill="#ccfbf1">fast brain</text>
+    <text x="20" y="100" font-size="16" fill="#ffffff">decides in <tspan font-weight="800" fill="#fde68a">~0.4 s</tspan></text>
+
+    <!-- slow brain card -->
+    <rect x="240" y="140" width="200" height="120" rx="18" fill="#ffffff" fill-opacity="0.1" stroke="#cbd5e1" stroke-width="2"/>
+    <circle cx="284" cy="184" r="26" fill="#e2e8f0"/>
+    <rect x="270" y="172" width="28" height="4" rx="2" fill="#475569"/>
+    <rect x="270" y="182" width="22" height="4" rx="2" fill="#475569"/>
+    <rect x="270" y="192" width="26" height="4" rx="2" fill="#475569"/>
+    <text x="322" y="182" font-size="22" font-weight="800" fill="#ffffff">LLM</text>
+    <text x="322" y="204" font-size="15" fill="#e2e8f0">slow brain</text>
+    <text x="260" y="240" font-size="16" fill="#ffffff">writes and reasons</text>
+
+    <!-- connectors -->
+    <path d="M200 60 C 300 60 340 90 340 138" fill="none" stroke="url(#glow)" stroke-width="3"/>
+    <path d="M240 200 C 120 200 100 170 100 122" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="6 6"/>
+    <text x="236" y="96" font-size="14" fill="#99f6e4">route · guard · judge</text>
+    <text x="44" y="190" font-size="14" fill="#cbd5e1">asks for decisions</text>
+  </g>
+</g>
+  <text x="72" y="578" font-size="22" fill="#99f6e4">github.com/harshithsunku/learn-jev-end-to-end</text>
+</svg>

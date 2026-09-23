@@ -1,4 +1,4 @@
-"""jev-zero-to-agent setup doctor.
+"""learn-jev-end-to-end setup doctor.
 
 Checks, in order, that your one key can drive both brains:
   1. the slow brain (LLM) answers a chat completion,

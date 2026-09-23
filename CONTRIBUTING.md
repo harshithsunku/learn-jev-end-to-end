@@ -27,7 +27,15 @@ uv run python scripts/check_notebooks.py
 uv run jupyter nbconvert --to notebook --execute --inplace NN_your_notebook.ipynb
 ```
 
-Commit notebooks **with outputs**, so GitHub previews show real results. Run `scripts/check_notebooks.py`
+Preview the docs site (it renders the notebooks too) with:
+
+```bash
+uv sync --extra docs
+uv run mkdocs serve          # http://127.0.0.1:8000
+uv run mkdocs build --strict # what CI runs; fails on broken links
+```
+
+Commit notebooks **with outputs**, so GitHub and the docs site show real results. Run `scripts/check_notebooks.py`
 before committing; it fails if anything that looks like an API key appears in a notebook output.
 
 ## Adding a use case

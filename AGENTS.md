@@ -6,7 +6,7 @@ Guidance for AI coding agents (and humans) working in this repository.
 
 A teaching repo: 12 Jupyter notebooks that take a developer from their first Jev call to 13 production-style
 use cases where **Jev (TypeSafe's System One model, the "fast brain") makes decisions inside an LLM agent
-loop (the "slow brain")**. It is the sibling of
+loop (the "slow brain")**. It is the sequel to
 [build-your-first-ai-agent](https://github.com/harshithsunku/build-your-first-ai-agent) and reuses its
 agent loop.
 
@@ -25,7 +25,9 @@ agent loop.
 | `11_jev_as_judge_and_evals` | Jev judge vs LLM judges; CI gate; measuring the done gate | 11, 12 |
 | `12_capstone_ops_copilot` | Shield -> dispatcher -> 5 desks + human queue | 13 |
 
-Also: `app.py` (Gradio playground, the only file that imports gradio), `jobs/email_triage.py` (cron-able job),
+Also: `docs/` + `mkdocs.yml` (the MkDocs Material site published to GitHub Pages by
+`.github/workflows/docs.yml`; `docs/course/*.ipynb` are **symlinks** to the root notebooks, rendered by
+`mkdocs-jupyter`), `app.py` (Gradio playground, the only file that imports gradio), `jobs/email_triage.py` (cron-able job),
 `scripts/doctor.py` (setup check), `scripts/check_notebooks.py` (keyless CI checks), `data/` (committed, labeled
 fixtures).
 
@@ -72,6 +74,16 @@ uv run jupyter lab
   OpenRouter's gateway can return **403 with a Cloudflare HTML page** for payloads that look like live
   exploit chains, so treat it as "could not screen", never as "safe".
 - `.env`, `reports/` and checkpoints are git-ignored. Never commit keys; `check_notebooks.py` scans for them.
+
+## Docs site
+
+```bash
+uv sync --extra docs && uv run mkdocs serve   # preview
+uv run mkdocs build --strict                  # CI check: no broken links
+```
+
+When a notebook's results change, update the numbers quoted in `README.md`, `docs/index.md`,
+`docs/use-cases/index.md` and `docs/benchmarks.md`.
 
 ## Editing notebooks
 
