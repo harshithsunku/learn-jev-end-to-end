@@ -56,7 +56,7 @@ list, and it can't write an essay. That's the point.
 |---|---|---|
 | **What it does** | makes decisions: pick, score, yes/no | writes, explains, plans, uses tools |
 | **Speed** (our run) | ~0.4 s | ~2.5-3 s |
-| **Cost per 1,000 decisions** (our run) | ~$0.02 | $0.08 (small) to $1.65 (frontier) |
+| **Cost per 1,000 decisions** (our run) | ~$0.02 | $0.08 (small) to $1.67 (frontier) |
 | **Can it make things up?** | no, it only picks from *your* answers | yes |
 
 **This course teaches you to combine them:** Jev makes the many small decisions, and the LLM does the few
@@ -127,8 +127,8 @@ Here is the head-to-head from [notebook 02](course/02_jev_vs_llm.ipynb):
 
 ![Jev vs a small and a frontier LLM: accuracy, latency and cost](assets/jev-vs-llm.png)
 
-On the harder 8-way email task, Jev matched the frontier model's accuracy (92%) and was **8x faster and
-87x cheaper** than it. On the easy scam task all three models were about 100% accurate.
+On the harder 8-way email task, Jev matched the frontier model's accuracy (92%) and was **7x faster and
+88x cheaper** than it. On the easy scam task all three models were about 98-100% accurate.
 [Read the full benchmark, including where the LLMs did better](benchmarks.md).
 
 ## Who is this for?

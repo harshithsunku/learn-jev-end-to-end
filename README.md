@@ -63,7 +63,7 @@ and it can't write an essay. That's the point.
 |---|---|---|
 | **What it does** | decides: yes/no, pick one, score | writes, explains, plans, uses tools |
 | **Speed** (our run) | **~0.4 s** | ~2.5-3 s |
-| **Cost per 1,000 decisions** (our run) | **~$0.02** | $0.08 (small model) to $1.65 (frontier model) |
+| **Cost per 1,000 decisions** (our run) | **~$0.02** | $0.08 (small model) to $1.67 (frontier model) |
 | **Can it make things up?** | no, it only picks from *your* answers | yes |
 
 **This course teaches you to combine them.** Jev makes the many small decisions, the LLM does the few
@@ -150,8 +150,10 @@ The same questions on the same labeled data, asked to Jev, a small LLM and a fro
 
 <img src="docs/assets/jev-vs-llm.png" alt="Jev vs a small and a frontier LLM: accuracy, latency and cost" width="100%">
 
-On the harder 8-way task, **Jev matched the frontier model's accuracy (92%) and was 8x faster and 87x
-cheaper.** On the easy task all three were about 100% accurate, and the LLMs were a little more confident.
+On the harder 8-way task, **Jev matched the frontier model's accuracy (92%) and was 7x faster and 88x
+cheaper.** On the easy task all three were about 98-100% accurate, and the LLMs were a little more confident.
+Per-class results are in the notebook too: with only 5 emails per class, "personal" was the weakest class for
+all three models.
 [Full benchmark, including where the LLMs did better →](https://harshithsunku.github.io/learn-jev-end-to-end/benchmarks/)
 
 ## 🧩 Also included
