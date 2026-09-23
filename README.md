@@ -89,9 +89,10 @@ r.choices["team"].choice        # 'billing'  (probabilities + confidence include
 r.scores["frustration"].score   # 2.83 -> between 'frustrated' and 'furious'
 ```
 
-> **No Jev access yet?** Set `JEV_BACKEND=adapter` in `.env`. Every notebook then answers the same typed
+> **No Jev access yet?** Set `JEV_BACKEND=adapter` in `.env`. The notebooks then answer the same typed
 > questions with your LLM through [`system-one-adapter`](https://github.com/typesafe-ai/system-one-adapter-python).
-> It's slower, but the whole course runs.
+> It's slower and pricier, but notebooks 01 and 03-12, `app.py` and the email job all run, and their built-in
+> accuracy checks pass (we tested this). Only notebook 02 needs real Jev, because it benchmarks Jev itself.
 
 ## The course
 

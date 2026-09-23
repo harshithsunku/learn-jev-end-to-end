@@ -267,8 +267,9 @@ def race(text, question):
     t0 = time.perf_counter()
     llm = chat(f"{question} Answer yes or no.\n\n{text}")
     llm_ms = 1000 * (time.perf_counter() - t0)
-    return (f"P(yes) = {r.nouls['q'].noul:.2f}", f"{jev_ms:.0f} ms",
-            llm.strip(), f"{llm_ms:.0f} ms", f"Jev was {llm_ms / jev_ms:.1f}x faster")
+    verdict = (f"Jev was {llm_ms / jev_ms:.1f}x faster" if JEV_BACKEND != "adapter"
+               else "JEV_BACKEND=adapter: the 'Jev' side is your LLM via the adapter - set typesafe for the real race")
+    return (f"P(yes) = {r.nouls['q'].noul:.2f}", f"{jev_ms:.0f} ms", llm.strip(), f"{llm_ms:.0f} ms", verdict)
 
 
 # ---------------------------------------------------------------- UI

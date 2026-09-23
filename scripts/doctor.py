@@ -36,17 +36,16 @@ JEV_API_KEY = os.environ.get("TYPESAFE_API_KEY") or API_KEY
 VERIFY_SSL = os.environ.get("VERIFY_SSL", "true").strip().lower() not in ("false", "0", "no")
 
 OK, FAIL = "\033[32mOK  \033[0m", "\033[31mFAIL\033[0m"
-failures = 0
+failures = []
 
 
 def check(label, fn):
-    global failures
     t0 = time.perf_counter()
     try:
         detail = fn()
         print(f"{OK} {label:<34} {1000 * (time.perf_counter() - t0):6.0f} ms  {detail}")
     except Exception as exc:  # noqa: BLE001 - a doctor reports everything
-        failures += 1
+        failures.append(label)
         print(f"{FAIL} {label:<34} {type(exc).__name__}: {str(exc)[:160]}")
 
 
@@ -57,6 +56,10 @@ def masked(key):
 print(f"LLM  endpoint {BASE_URL}  model {MODEL}")
 print(f"Jev  backend  {JEV_BACKEND}  endpoint {JEV_BASE_URL}  model {JEV_MODEL}")
 print(f"key  {masked(API_KEY)}   VERIFY_SSL={VERIFY_SSL}\n")
+
+if API_KEY in ("", "set-me") or "your-key-here" in API_KEY:
+    sys.exit("No key yet: paste your OpenRouter key into .env as OPENAI_API_KEY=sk-or-v1-...  "
+             "(get one at https://openrouter.ai/keys), then run this again.")
 
 client = OpenAI(base_url=BASE_URL, api_key=API_KEY, http_client=httpx.Client(verify=VERIFY_SSL))
 
@@ -118,8 +121,10 @@ check("LLM tool calling", llm_tools)
 check(f"Jev System One ({JEV_BACKEND})", jev_call)
 
 if failures:
-    print(f"\n{failures} check(s) failed. See README > Troubleshooting.")
-    if JEV_BACKEND != "adapter":
-        print("No Jev access yet? Set JEV_BACKEND=adapter in .env - same API, answered by your LLM.")
+    print(f"\n{len(failures)} check(s) failed. See README > Troubleshooting.")
+    if any(f.startswith("LLM") for f in failures):
+        print("The LLM checks failed too, so look at the key and endpoint first (OPENAI_API_KEY, OPENAI_BASE_URL, MODEL).")
+    elif JEV_BACKEND != "adapter":
+        print("Only Jev failed. No Jev access yet? Set JEV_BACKEND=adapter in .env: same API, answered by your LLM.")
     sys.exit(1)
 print("\nAll green. Next: uv run jupyter lab  ->  open 01_hello_jev.ipynb")
