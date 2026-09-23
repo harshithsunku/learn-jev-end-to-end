@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - uses: astral-sh/setup-uv@v10
+      - uses: astral-sh/setup-uv@v10.2.0
       - run: uv sync --extra ui --extra docs
       - name: Notebooks valid, shared cells identical, no secrets, code compiles
         run: uv run python scripts/check_notebooks.py
@@ -28,7 +28,7 @@ jobs:
       OPENAI_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
     steps:
       - uses: actions/checkout@v7
-      - uses: astral-sh/setup-uv@v10
+      - uses: astral-sh/setup-uv@v10.2.0
       - run: uv sync
       - name: Skip when no key is configured (forks, first-time contributors)
         id: key
